@@ -1,0 +1,52 @@
+{
+  "name": "ghostly-vscode",
+  "displayName": "Ghostly - Editor Memory",
+  "description": "VSCode extension for terminal memory - remember commands and errors in your editor",
+  "version": "0.1.0",
+  "publisher": "yksanjo",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Developer Tools"
+  ],
+  "activationEvents": [
+    "onCommand:ghostly.capture",
+    "onCommand:ghostly.search",
+    "onCommand:ghostly.showMemory"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ghostly.capture",
+        "title": "Ghostly: Capture Terminal Command",
+        "category": "Ghostly"
+      },
+      {
+        "command": "ghostly.search",
+        "title": "Ghostly: Search Memories",
+        "category": "Ghostly"
+      },
+      {
+        "command": "ghostly.showMemory",
+        "title": "Ghostly: Show Past Fixes",
+        "category": "Ghostly"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ghostly.showMemory",
+        "key": "ctrl+shift+m",
+        "mac": "cmd+shift+m"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo tests"
+  },
+  "devDependencies": {
+    "vscode": "^1.80.0"
+  }
+}
