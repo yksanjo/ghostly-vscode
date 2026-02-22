@@ -1,46 +1,84 @@
-# Ghostly VSCode
+# ghostly-vscode
 
-> VSCode extension for terminal memory - remember commands and errors in your editor.
+## Detailed Description
 
-Part of the Ghostly Memory Bank ecosystem - editor-native memory.
+ghostly-vscode is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-## Features
+## Problem Statement
 
-- **Cmd+Shift+M** - Show past memories for current project
-- **Capture** - Select text and save as a command/fix
-- **Search** - Find past fixes for current workspace
-- **Shared Storage** - Uses same `~/.ghostly/memory.json` as ghostly-cli
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-## Commands
+## Solution Overview
 
-- `Ghostly: Capture Terminal Command` - Save selected text
-- `Ghostly: Search Memories` - Search past commands
-- `Ghostly: Show Past Fixes` - View memory panel
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-## Keybinding
+## Key Features
 
-- `Cmd+Shift+M` (Mac) / `Ctrl+Shift+M` (Windows/Linux) - Show memory
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-## Installation
+## Repository Structure
 
-1. Open VSCode
-2. Search for "Ghostly" in Extensions
-3. Or manually: `code --install-extension yksanjo.ghostly-vscode`
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
+```bash
+npm ci
+npm run lint
+npm test
+npm run build
+```
 
 ## Usage
 
-1. Open a project in VSCode
-2. Press `Cmd+Shift+M` to see past fixes
-3. Click any fix to copy to clipboard
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-## Shared Memory
+## Quality Standards
 
-This extension shares memory with ghostly-cli. Install both for:
-- CLI: `npm install -g ghostly-cli`
-- VSCode: This extension
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-Memory is stored at `~/.ghostly/memory.json`
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
