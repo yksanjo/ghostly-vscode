@@ -1,5 +1,12 @@
 # ghostly-vscode
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/ghostly-vscode/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/ghostly-vscode/actions)
+![License](https://img.shields.io/github/license/yksanjo/ghostly-vscode)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/ghostly-vscode)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/ghostly-vscode)
+
 ## Detailed Description
 
 ghostly-vscode is maintained as an industry-grade software project with production-ready engineering practices.  
